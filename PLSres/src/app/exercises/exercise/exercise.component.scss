@@ -1,0 +1,14 @@
+@import '../../shared/styles/variables.scss';
+
+@each $color in $course-colors {
+    .course-color-#{$color} {
+        background-color: #{'#' + $color};
+        color: white;
+    }
+}
+
+.custom-link {
+    color: var(--bs-body-color);
+    text-decoration: underline;
+    cursor: pointer;
+}

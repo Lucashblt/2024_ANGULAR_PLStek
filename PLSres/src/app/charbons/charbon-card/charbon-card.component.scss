@@ -1,0 +1,18 @@
+@import '../../shared/styles/variables.scss';
+
+.charbon-card {
+    width: auto;
+    height: auto;
+}
+
+@each $color in $course-colors {
+    .course-color-#{$color} {
+        background-color: #{'#' + $color};
+        color: white;
+    }
+}
+
+.charbon-img-inline {
+    margin-right: 1em;
+    height: 1.5em;
+}
